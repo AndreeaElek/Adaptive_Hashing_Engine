@@ -1,4 +1,4 @@
-REQUIREMENTS: 
+REQUIREMENTS:
 
 Library: OpenSSL 3.x (libcrypto)
 
@@ -6,13 +6,13 @@ Compiler: GCC 11.0+ (MinGW-w64)
 
 Environment: Windows PowerShell / Command Prompt
 
-Python: 3.10 or higher 
+Python: 3.10 or higher
 
 
 
 
 
-Additional notes and compilation instructions: 
+Additional notes and compilation instructions:
 
 
 
@@ -23,8 +23,8 @@ There are also .exe files included for each hash function. The following command
 !Note: if running the execution command in the powershell doesn't show a result, or the terminal closes immediately after it finished the hashing, you should run it the terminal of the application used to modify the code (ex: Visual Studio Code). The resulting hash will be visible there.
 
 FOR SHA-256
-gcc SHA-256.c -o SHA-256.exe -I"C:\\Program Files\\OpenSSL-Win64\\include" libcrypto.lib libssl.lib -lws2\_32 -lgdi32 -ladvapi32 -lcrypt32
-.\\SHA-256.exe
+Compilation: gcc SHA-256.c -o SHA-256.exe -I"C:\\Program Files\\OpenSSL-Win64\\include" libcrypto.lib libssl.lib -lws2\_32 -lgdi32 -ladvapi32 -lcrypt32 
+Execution: .\\SHA-256.exe
 
 
 
@@ -52,13 +52,9 @@ Execution: .\\RIPEMD.exe
 
 
 
-FOR the Hashing Engine: 
+FOR the Hashing Engine:
 
 Compilation: gcc adaptive\_engine.c -o engine.exe
 
 Execution: ./adaptive\_engine.exe testfile.txt
-
-
-
-
 
