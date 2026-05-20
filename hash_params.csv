@@ -1,0 +1,6 @@
+﻿Algorithm,Security,Speed,Throughput,Consistency
+SHA-256,8,6,8,4
+SHA-3,10,10,10,7
+Whirlpool,6,8,5,7
+Blake2b,9,9,7,10
+RIPEMD,5,8,4,6
