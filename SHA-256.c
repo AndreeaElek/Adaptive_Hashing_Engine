@@ -16,9 +16,14 @@ void hash_sha256(const char *string) {
     printf("\n");
 }
 
-int main() {
-    //we call the hash function for the string "abc"
-    hash_sha256("abc"); 
+int main(int argc, char *argv[]) {
+    if (argc < 2) {
+        // Fallback to "abc" if no file argument is provided
+        hash_sha256("abc"); 
+    } else {
+        // This will hash "testfile.txt" when called by the engine
+        hash_sha256(argv[1]); 
+    }
     return 0;
 }
 

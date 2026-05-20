@@ -33,8 +33,14 @@ void hash_blake2(const char *message) {
     printf("\n");
 }
 
-int main() {
-    //we call the hash function for the string "abc"
-    hash_blake2("abc");
+int main(int argc, char *argv[]) {
+    if (argc < 2) {
+        // Fallback to "abc" if no file argument is provided
+        hash_blake2("abc"); 
+    } else {
+        // This will hash "testfile.txt" when called by the engine
+        hash_blake2(argv[1]); 
+    }
     return 0;
 }
+

@@ -47,8 +47,13 @@ void hash_whirlpool(const char *message) {
     printf("\n");
 }
 
-int main() {
-    //we call the hash function for the string "abc"
-    hash_whirlpool("abc");
+int main(int argc, char *argv[]) {
+    if (argc < 2) {
+        // Fallback to "abc" if no file argument is provided
+        hash_whirlpool("abc"); 
+    } else {
+        // This will hash "testfile.txt" when called by the engine
+        hash_whirlpool(argv[1]); 
+    }
     return 0;
 }
