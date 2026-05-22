@@ -1,6 +1,6 @@
-﻿Algorithm,Security,Speed,Throughput,Consistency
-SHA-256,8,6,8,4
-SHA-3,10,10,10,7
-Whirlpool,6,8,5,7
-Blake2b,9,9,7,10
-RIPEMD,5,8,4,6
+﻿Algorithm,Security,Speed,Throughput,Consistency,Domain1,Domain2,Domain3
+SHA-256,6,7,7,4,Blockchain_And_Distributed_Ledgers,Public_Key_Infrastructure_And_TLS,Firmware_And_Software_Integrity
+SHA-3,10,6,6,8,Hardware_Security_Modules_And_Embedded,Blockchain_And_Distributed_Ledgers,Military_And_Defense_Communications
+Whirlpool,4,10,10,6, Cloud_Storage_And_File_Systems,Network_Security_Protocols,Cryptocurrency_And_Privacy_Tokens
+Blake2b,8,8,8,10,Enterprise_Data_Archiving,Database_Encryption_And_Storage,Firmware_And_Software_Integrity
+RIPEMD,2,5,5,9,Blockchain_And_Distributed_Ledgers,Database_Encryption_And_Storage,Public_Key_Infrastructure_And_TLS
